@@ -1,0 +1,41 @@
+{
+  "name": "Category",
+  "namespace": "com.demokafkastreams",
+  "type": "record",
+  "fields": [
+
+    {
+      "default": null,
+      "name": "categoryId",
+      "type": [
+        "null",
+        {
+            "type": "string",
+            "avro.java.string": "String"            
+        }
+      ]
+    },    
+    {
+      "default": null,
+      "name": "categoryName",
+      "type": [
+        "null",
+        {
+            "type": "string",
+            "avro.java.string": "String"
+        }
+      ]
+    }, 
+    {
+      "default": null,
+      "name": "description",
+      "type": [
+        "null",
+        {
+            "type": "string",
+            "avro.java.string": "String"
+        }
+      ]
+    }
+  ]
+}

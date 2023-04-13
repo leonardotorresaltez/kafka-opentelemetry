@@ -1,0 +1,33 @@
+server.port: 8080
+server.address: 0.0.0.0
+
+logging:
+  level:
+    root: INFO
+
+spring:
+  kafka:
+    bootstrap-servers: broker:29092
+    properties:
+      schema.registry.url: http://schema-registry:8081
+      auto.offset.reset: latest
+      auto.register.schemas: true
+    
+
+app:
+  properties:
+#    myBookTopic: myBookTopic 
+    myBookTopic: bookTopic 
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-components: always
+      show-details: always
+      probes:
+        enabled: true

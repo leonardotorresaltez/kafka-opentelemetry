@@ -1,0 +1,63 @@
+{
+  "name": "Book",
+  "namespace": "com.demokafkastreams",
+  "type": "record",
+  "fields": [
+
+    {
+      "default": null,
+      "name": "title",
+      "type": [
+        "null",
+        {
+            "type": "string",
+            "avro.java.string": "String"
+        }
+      ]
+    },
+    {
+      "default": null,
+      "name": "author",
+      "type": [
+        "null",
+        {
+            "type": "string",
+            "avro.java.string": "String"
+        }
+      ]
+    },
+    {
+      "default": null,
+      "name": "isbn",
+      "type": [
+        "null",
+        {
+            "type": "string",
+            "avro.java.string": "String"
+        }
+      ]
+    },
+    {
+      "default": null,
+      "name": "publisher",
+      "type": [
+        "null",
+        {
+            "type": "string",
+            "avro.java.string": "String"
+        }
+      ]
+    },
+    {
+      "default": null,
+      "name": "categoryId",
+      "type": [
+        "null",
+        {
+            "type": "string",
+            "avro.java.string": "String"
+        }
+      ]
+    }
+  ]
+}
