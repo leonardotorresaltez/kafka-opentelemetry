@@ -8,7 +8,7 @@ scrape_configs:
     metrics_path: '/actuator/prometheus'
     static_configs:
       - targets: ['kafkaproducer:8080']
-  - job_name: 'kafkaproducer'
+  - job_name: 'custom-metrics-demo'
     metrics_path: '/actuator/prometheus'
     static_configs:
-      - targets: ['kafkaproducer:8090']      
+      - targets: ['custom-metrics-demo:8090']      
